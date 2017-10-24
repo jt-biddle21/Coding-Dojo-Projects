@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <title>The Disappear Ninja</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="disappearingNinja.css">
+    <script src="jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".ninjaImage").click(function(){
+                $(this).fadeOut();
+            })
+            $("#restorebutton").click(function(){
+                $(".ninjaImage").fadeIn();
+            })
+        })
+    </script>
+    <body>
+        <img class="ninjaImage" src="ninja.png" alt="ninjaimage.png">
+        <img class="ninjaImage" src="ninja.png" alt="ninjaimage.png">
+        <img class="ninjaImage" src="ninja.png" alt="ninjaimage.png">
+        <img class="ninjaImage" src="ninja.png" alt="ninjaimage.png">
+        <img class="ninjaImage" src="ninja.png" alt="ninjaimage.png">
+        <img class="ninjaImage" src="ninja.png" alt="ninjaimage.png">
+        <img class="ninjaImage" src="ninja.png" alt="ninjaimage.png">
+        <img class="ninjaImage" src="ninja.png" alt="ninjaimage.png">
+        <button id="restorebutton">Restore!</button>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    display: inline-block;
+    width: 350px;
+}
+#restorebutton{
+    margin-left: 100px;
+    margin-bottom: 20px;
+    background-color: rgb(39, 133, 39);
+    border-radius: 5px 5px 5px 5px;
+    width: 50px;
+    box-shadow: 2px 2px 2px black;
+    color:white;
+    font-size: 15px;
+    padding: 25px 110px 25px 50px;;
+}
