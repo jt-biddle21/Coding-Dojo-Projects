@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>PokeMon </title>
+        <meta charset='utf-8'>
+        <script src='jQuery.js'></script>
+        <script>
+            $(document).ready(function(){
+                function getPokemon(){
+                    var imagestring = "";
+                    for(var i=1;i < 152;i++){
+                        imagestring += '<img src="http://pokeapi.co/media/img/' + [i] + '.png">'
+                    }
+                    return(imagestring);
+                }
+                $("body").append(getPokemon());
+            })
+        </script>
+    <body>
+
+    </body>
+</html>

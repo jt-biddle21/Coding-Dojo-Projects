@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper{
+    margin:0px;
+}
+#pokemon{
+    display: inline-block;
+    width: 800px;
+    height: 800px;
+    vertical-align: top;
+    text-align: left;
+    overflow-y: auto;
+
+}
+#pokedisplay{
+    display: inline-block;
+    width: 250px;
+    height: 500px;
+    border: 10px solid red;
+    text-align: center;
+}
+#pokedisplay h2{
+    border-bottom: 5px solid black;
+    margin: 15px 50px 0px 50px;
+    border-radius: 25px;
+}

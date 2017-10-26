@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gotta Catch'em All</title>
+        <link rel="stylesheet" href="pokedex.css">
+        <script src="jQuery.js"></script>
+        <script>
+            $(document).ready(function(){
+                function getPokemon(){
+                    var imagestring = "";
+                    for(var i=1;i < 152;i++){
+                        imagestring += "<img value='" + [i] + "' src='http://pokeapi.co/media/img/" + [i] + ".png'>"
+                        // imagestring += '<img src="http://pokeapi.co/media/img/' + [i] + '.png">'
+                    }
+                    return(imagestring);
+                }
+                $("#pokemon").append(getPokemon()); 
+                $(this).on("click","img", function(){
+                    var temp = $(this).attr("value");
+                $.get("http://pokeapi.co/api/v2/pokemon/" + temp + "/", function(){
+                    })
+                    console.log(temp);
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="pokemon">
+            </div>
+            <div id="pokedisplay">
+                <h2>PokeDex</h2>
+            </div>                    
+        </div>  
+    </body>
+</html>
