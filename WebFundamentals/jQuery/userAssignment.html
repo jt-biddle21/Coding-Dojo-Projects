@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>User Assignment</title>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" href="userAssignment.css">
+        <script src='jQuery.js'></script>
+        <script>
+            $(document).ready(function(){
+                alert('jQuery working!')
+                $("#form1").submit(function(){
+                    $("table").append("<tr><td>" + $("input[name='firstnamebox']").val() + "</td><td>" + $("input[name='lastnamebox']").val() + "</td><td>" + $("input[name='emailbox']").val() + "</td><td>" + $("input[name='phonebox']").val() + "</td></tr>")
+                    return false;
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div id="background">
+            <div id="container">
+                <table>
+                    <th>First Name: </th>
+                    <th>Last Name: </th>
+                    <th>Email Address: </th>
+                    <th>Contact #: </th>
+                </table>
+                <h2>Add User</h2>
+                <form id="form1">
+                    <p id="firstname">First Name: <input type="text" name="firstnamebox" value=""></p>
+                    <p id="lastname">Last Name: <input type="text" name="lastnamebox" value=""></p>
+                    <p id="email">Email: <input type="email" name="emailbox" value=""></p>
+                    <p id="telephone">Contact #: <input type="tel" name="phonebox" value=""></p>
+                    <p><input type="submit" value="Submit!"></p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

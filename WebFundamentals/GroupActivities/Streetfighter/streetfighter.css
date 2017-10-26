@@ -1,0 +1,52 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: Impact;
+}
+#window{
+  border: 5px solid black;
+  width: 970px;
+  height:500px;
+  margin: 10px;
+  padding-top: 100px;
+}
+#menu{
+  width:410px;
+  background: silver;
+  margin: auto;
+  vertical-align: super;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#secondmenu{
+  width:410px;
+  background: gray;
+  margin: auto;
+  vertical-align: super;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+h1{
+  text-align: center;
+  margin-top: 5px;
+}
+#buttons{
+  margin: 5px 5px 5px 7px;
+}
+button{
+  padding: 5px;
+  width: 120px;
+  margin: 5px;
+  border: 0;
+  border-radius: 2.5px;
+}
+.playerselect{
+    margin: 5px 2px 5px 2px;
+    display: inline-block;
+}
+#leftchar{
+
+}
+#rightchar{
+
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fight!</title>
+    <link rel="stylesheet" href="streetfighter.css">
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.arenabuttons').hover(function(){
+          var buttonValues = $(this).val();
+          $('#window').attr('style', buttonValues)
+        },function(){
+          $('#window').attr('style', 'background:gray')
+      })
+      $(document).on('click', '.arenabuttons', function(){
+        $('#window').html('<div id="secondmenu"><h1>Select Character</h1><div id="Characters"><div class="playerselect"><h3>Player 1</h3><select name="player1"><option value="leia">Princess Leia</option><option value="joker">?</option><option value="luke">Luke Skywalker</option><option value="fett">Bobba Fett</option><option value="r2">R2-D2</option><option value="vader">Darth Vader</option></select></div><div class="playerselect"><h3>Player 2</div><select name="player2"><option value="leia">Princess Leia</option><option value="joker">?</option><option value="luke">Luke Skywalker</option><option value="fett">Bobba Fett</option><option value="r2">R2-D2</option><option value="vader">Darth Vader</option></select></div></div></div>');
+      $('button').click(function(){
+        console.log("potato")
+      })
+    })
+
+
+      })
+    </script>
+  </head>
+  <body>
+    <div id="window" style="background:gray">
+      <div id="menu">
+        <h1>Select Arena</h1>
+        <div id=buttons>
+          <button id="beach" class="arenabuttons"  value="background-image:url('img/beach.jpg'); height:500px; width: 970px;">Beach</button>
+          <button id="dojo" class="arenabuttons"  value="background-image:url('img/dojo.jpg'); background-repeat: no-repeat; height:500px; width: 970px;">Dojo</button>
+          <button id="earth" class="arenabuttons"  value="background-image:url('img/earth.jpg'); height:500px; width: 970px;">Earth</button>
+          <button id="forest" class="arenabuttons"  value="background-image:url('img/forest.jpg'); height:500px; width: 970px;">Forest</button>
+          <button id="snow" class="arenabuttons"  value="background-image:url('img/snow.jpg'); height:500px; width: 970px;">Snow</button>
+          <button id="matrix" class="arenabuttons"  value="background-image:url('img/matrix.jpg'); background-repeat: no-repeat; height:500px; width: 970px;">Matrix</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
