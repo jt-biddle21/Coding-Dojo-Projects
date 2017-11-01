@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    width: 970px;
+    background-color: gold;
+    margin: auto;
+}
+#firsthead{
+    background-color: green;
+    padding-top: 20px;
+    margin: 0;
+    text-align: center;
+}
+#container{
+    background-color: lime;
+    width: 450px;
+}

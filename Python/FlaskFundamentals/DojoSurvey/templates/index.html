@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dojo Survey</title>
+        <link rel="stylesheet" type="text/css" href='{{url_for("static", filename="css/styles.css")}}'>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="firsthead">
+                <form action="/dojoform" method="get">
+                    <h2>Click here to submit a survey!</h2>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
