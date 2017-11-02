@@ -13,6 +13,17 @@
     margin: 0;
     text-align: center;
 }
+#wrapper2{
+    width: 970px;
+    background-color: gold;
+    margin: auto;
+}
+#secondhead{
+    background-color: green;
+    padding-top: 20px;
+    margin: 0;
+    text-align: center;
+}
 #container{
     background-color: lime;
     width: 450px;
