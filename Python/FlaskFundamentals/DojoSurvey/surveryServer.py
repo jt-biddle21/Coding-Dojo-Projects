@@ -9,10 +9,6 @@ def homepage():
 
 @app.route("/results", methods=["POST"])
 def resultspage():
-    name = request.form["name"]
-    location = request.form["location"]
-    lang = request.form["lang"]
-    comment = request.form["comment"]
     return render_template("results.html", name=request.form['name'], location=request.form["location"], lang=request.form["lang"], comment=request.form['comment'])
 
 
