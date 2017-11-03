@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Great Number Game!</title>
+        <link href='{{url_for("static", filename="css/styles.css")}}'>
+        <script src="../../../../WebFundamentals/jQuery/jQuery.js"></script>
+        <script>
+            $(document).ready(function(){
+                alert("what")
+                $("#wrongbox").hide()
+                $("#button").click(function(){
+                    $("#wrongbox").show();
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <h2>Great Number Game</h2>
+        <h4>Im thinking of a number! Enter a number below to see if you guessed it right!</h4>
+        <form method="post" action="/guess">
+            <input name="number" type="text" value="">
+            <input id="button" type="submit" value="GUESS">
+        </form>
+        <div id="wrongbox">
+            <h2></h2>
+
+        </div>
+    </body>
+</html>
