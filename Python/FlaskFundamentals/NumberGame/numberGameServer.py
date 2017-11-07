@@ -1,5 +1,5 @@
 import random
-
+import pprint
 from flask import Flask, render_template, request, session, redirect
 app = Flask(__name__)
 app.secret_key = "secretkey"
@@ -8,6 +8,7 @@ app.secret_key = "secretkey"
 @app.route('/')
 def index():
     session['number'] = random.randrange(0, 100)
+    pprint.pprint(session['number'])
     return render_template('index.html')
 
 
