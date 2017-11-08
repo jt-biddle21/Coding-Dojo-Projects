@@ -5,10 +5,12 @@
         <title>SUCCESS!</title>
     </head>
     <body>
+        <h3>Here are the emails that have been entered:</h3>
         <table>
         {% for em in bemail %}
         <tr>
             <td>{{em.email}}</td>
+            <td>{{em.created_at}}</td>
         </tr>
         {% endfor %}
         </table>

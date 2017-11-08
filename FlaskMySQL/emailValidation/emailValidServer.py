@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, flash, session
 from mysqlconnection import MySQLConnector
 import re
+import datetime
 
 app = Flask(__name__)
 app.secret_key = "BoiItsSecret"
@@ -30,9 +31,15 @@ def validate():
         flash("Invalid Email Address!")
         return redirect('/')
     else:
-        add_email_query = "INSERT INTO emails (email) VALUES (:qemail)"
-        data = {"qemail": request.form["email"]}
-        mysql.query_db(add_email_query, data)
+        checker = "SELECT * FROM emails WHERE email = '{}'".format(session['email'])
+        checkerresponse = mysql.query_db(checker)
+        if len(checkerresponse) > 0:
+            flash("Email already exists!")
+            return redirect('/')
+        else:
+            add_email_query = "INSERT INTO emails (email, created_at) VALUES (:qemail, :created_at)"
+            data = {"qemail": request.form["email"], "created_at": datetime.datetime.now()}
+            mysql.query_db(add_email_query, data)
     return redirect('/success')
 
 
