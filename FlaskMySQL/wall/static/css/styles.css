@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#homewrapper {
+    margin: 20px;
+    width:450px;
+    text-align: left;
+}
+#loginform{
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-bottom: 3px;
+    background-color: lightgray;
+}
+#wallwrapper{
+    margin: 10px;
+}
+#wallheader{
+    display: inline-block;
+}
+#title{
+    display: inline-block;
+    margin: 10px;
+    color: darkred;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#logbutton{
+    display: inline-block;
+    margin-left: 800px;
+}
+#messagearea{
+    margin-left: 5px;
+}
+#messagebox h3{
+    margin-left: 5px;
+}

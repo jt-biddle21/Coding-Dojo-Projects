@@ -51,35 +51,71 @@ def register():
         is_valid = False
 
     if is_valid:
-        add_user = "INSERT INTO users (first_name, last_name, email, password, created_at, updated_at) VALUES (:fn, :ln, :em, :pw, NOW(), NOW())"
-        user_data = {'fn': request.form['fname'], 'ln': request.form['lname'], 'em': request.form['email'], 'pw': request.form['pw']}
+        first_name = request.form['fname']
+        last_name = request.form['lname']
+        email = request.form['email']
+        password = md5.new(request.form['pw']).hexdigest()
+        add_user = "INSERT INTO users (first_name, last_name, email, password, created_at) VALUES (:fn, :ln, :em, :pw, NOW())"
+        user_data = {'fn': first_name, 'ln': last_name, 'em': email, 'pw': password}
         mysql.query_db(add_user, user_data)
         flash("User created in DB!")
-
     return redirect('/')
 
 
 @app.route('/login', methods=["POST"])
 def login():
     #is there a user with that email?
-    find_user_q = "SELECT * FROM users WHERE email = :email"
-    data = {'email': request.form['email1']}
+    password = md5.new(request.form['pw1']).hexdigest()
+    email = request.form['email1']
+    find_user_q = "SELECT * FROM users WHERE users.email = :email AND users.password = :password"
+    data = {'email': email, 'password': password}
     found_user = mysql.query_db(find_user_q, data)
     if len(found_user) == 0: #No user registered
         flash("No user registered with that email!")
     else:   #if so, does the password they entered match what is in the DB?
-        if found_user[0]['password'] != request.form['pw1']:
+        if found_user[0]['password'] != password:
             flash("Password is incorrect")
         else:
             session['name'] = found_user[0]['first_name']
+            session['password'] = found_user[0]['password']
             session['user_id'] = found_user[0]['user_id']
             return redirect('/wall')
 
     return redirect('/')
 
+
 @app.route('/wall')
 def show_wall():
-    return render_template('wall.html')
+    if 'name' not in session:
+        flash("You need to log in first to view your wall!")
+        return redirect('/')
+    jointhem_yeah_q = "SELECT * FROM messages JOIN users ON users.user_id = messages.user_user_id ORDER BY messages.created_at DESC"
+    joinboys = mysql.query_db(jointhem_yeah_q)
+
+    return render_template('wall.html', join=joinboys)
+
+
+@app.route('/postmessage', methods=["POST"])
+def message():
+    messagepost = request.form['post']
+    create_msg_q = "INSERT INTO messages (user_user_id, message, created_at) VALUES (:ui, :msg, NOW())"
+    msg_data = {'ui': session['user_id'], 'msg': messagepost}
+    mysql.query_db(create_msg_q, msg_data)
+    return redirect('/wall')
+
+
+@app.route('/logout')
+def logout():
+    if 'name' not in session:
+        return redirect('/')
+    elif 'password' not in session:
+        return redirect('/')
+    elif 'user_id' not in session:
+        return redirect('/')
+    session.pop('name')
+    session.pop('password')
+    session.pop('user_id')
+    return redirect('/')
 
 
 app.run(debug=True)

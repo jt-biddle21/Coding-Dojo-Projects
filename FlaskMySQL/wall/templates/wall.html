@@ -3,8 +3,41 @@
     <head>
         <meta charset="UTF-8">
         <title>WALL</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     </head>
     <body>
-        <h1>WELCOME TO THE WALL, {{session['name']}}!</h1>
+        <div id="wallwrapper">
+            <div id="wallheader">
+                <h1 id="title">WELCOME TO THE WALL, {{session['name']}}!</h1>
+                <a id="logbutton" href="/logout">Log Out</a>
+            </div>
+            <div id="messagebox">
+                <h3>Post a message:</h3>
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        {% for message in messages %}
+                            <p>{{message}}</p>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                <form id="messagearea" action="/postmessage" method="post">
+                    <textarea name="post" rows="4" cols="50"></textarea>
+                    <input type="submit" value="POST!">
+                </form>
+                <table>
+                {% for j in join %}
+                    {% for c in comment%}<!--Create for loop for comments in side this-->
+                    <tr>
+                        <td>{{j.first_name}}   {{j.created_at}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{j.message}}</td>
+                        <td>{{c.comment}}</td>
+                    </tr>
+                    {% endfor %}
+                {% endfor %}
+                </table>
+            </div>
+        </div>
     </body>
 </html>

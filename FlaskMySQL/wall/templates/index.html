@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Reg Form Demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}
-            {% for message in messages %}
-                <p>{{message}}</p>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
-    <form action="/register" method="POST">
-        <label for="email">Email: <input id="email" type="text" name="email"></label><br>
-        <label for="name">First Name: <input id="name" type="text" name="fname"></label><br>
-        <label for="last">Last Name: <input id="last" type="text" name="lname"></label><br>
-        <label for="pass">Password: <input id="pass" type="password" name="pw"></label><br>
-        <label for="conf">Confirm Password: <input id="conf" type="password" name="confpw"></label><br>
-        <input type="submit" value="Register">
-    </form>
-    <form action='/login' method='post'>
-        <label for="logem">Email: <input id="logem" type="text" name="email1"></label>
-        <label for="logpass">Password: <input id="logpass" type="password" name="pw1"></label>
-        <input type="submit" value="Log In">
-    </form>
+    <div id="homewrapper">
+        <div id="reg">
+            <h2>Welcome to the Wall homepage!</h2>
+            <h4>To begin, login, or register is you haven't already!</h4>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <p>{{message}}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <form id="regform" action="/register" method="POST">
+                <label for="email">Email: <input id="email" type="text" name="email"></label><br>
+                <label for="name">First Name: <input id="name" type="text" name="fname"></label><br>
+                <label for="last">Last Name: <input id="last" type="text" name="lname"></label><br>
+                <label for="pass">Password: <input id="pass" type="password" name="pw"></label><br>
+                <label for="conf">Confirm Password: <input id="conf" type="password" name="confpw"></label><br>
+                <input type="submit" value="Register">
+            </form>
+            <h5>If you already registered, log in here!</h5>
+            <form id="loginform" action='/login' method='post'>
+                <label for="logem">Email: <input id="logem" type="text" name="email1"></label>
+                <label for="logpass">Password: <input id="logpass" type="password" name="pw1"></label>
+                <input type="submit" value="Log In">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
