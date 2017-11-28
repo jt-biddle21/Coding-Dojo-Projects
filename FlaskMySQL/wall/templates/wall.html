@@ -26,15 +26,31 @@
                 </form>
                 <table>
                 {% for j in join %}
-                    {% for c in comment%}<!--Create for loop for comments in side this-->
                     <tr>
-                        <td>{{j.first_name}}   {{j.created_at}}</td>
+                        <td>{{j.first_name}}   {{j.last_name}}   {{j.created_at}}</td>
                     </tr>
                     <tr>
                         <td>{{j.message}}</td>
+                    {% for c in comm%}
+                    {% if j.message_id == c.message_id%}
+                    <tr>
+                        <td>{{c.first_name}}   {{c.last_name}}   {{c.created_at}}</td>
+                    </tr>
+                    <tr>
                         <td>{{c.comment}}</td>
                     </tr>
+                    {% endif %}
                     {% endfor %}
+                    </tr>
+                    <tr>
+                        <td>
+                            <form id="commentarea" action="/postcomment" method="post">
+                                <input type="hidden" name="message_id" value='{{j.message_id}}'>
+                                <textarea name="comment" rows="2" cols="25"></textarea>
+                                <input type="submit" value="COMMENT!">
+                            </form>
+                        </td>
+                    </tr>
                 {% endfor %}
                 </table>
             </div>

@@ -1,0 +1,9 @@
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/human/bin/Debug/netcoreapp1.1/human.deps.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/human/bin/Debug/netcoreapp1.1/human.runtimeconfig.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/human/bin/Debug/netcoreapp1.1/human.runtimeconfig.dev.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/human/bin/Debug/netcoreapp1.1/human.dll
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/human/bin/Debug/netcoreapp1.1/human.pdb
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/human/obj/Debug/netcoreapp1.1/human.csproj.CoreCompileInputs.cache
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/human/obj/Debug/netcoreapp1.1/human.AssemblyInfo.cs
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/human/obj/Debug/netcoreapp1.1/human.dll
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/human/obj/Debug/netcoreapp1.1/human.pdb

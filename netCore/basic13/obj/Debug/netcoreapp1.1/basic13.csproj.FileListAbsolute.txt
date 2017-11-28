@@ -1,0 +1,9 @@
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/basic13/bin/Debug/netcoreapp1.1/basic13.deps.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/basic13/bin/Debug/netcoreapp1.1/basic13.runtimeconfig.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/basic13/bin/Debug/netcoreapp1.1/basic13.runtimeconfig.dev.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/basic13/obj/Debug/netcoreapp1.1/basic13.csproj.CoreCompileInputs.cache
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/basic13/obj/Debug/netcoreapp1.1/basic13.AssemblyInfo.cs
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/basic13/bin/Debug/netcoreapp1.1/basic13.dll
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/basic13/bin/Debug/netcoreapp1.1/basic13.pdb
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/basic13/obj/Debug/netcoreapp1.1/basic13.dll
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/basic13/obj/Debug/netcoreapp1.1/basic13.pdb

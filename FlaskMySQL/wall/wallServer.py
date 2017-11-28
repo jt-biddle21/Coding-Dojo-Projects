@@ -91,8 +91,9 @@ def show_wall():
         return redirect('/')
     jointhem_yeah_q = "SELECT * FROM messages JOIN users ON users.user_id = messages.user_user_id ORDER BY messages.created_at DESC"
     joinboys = mysql.query_db(jointhem_yeah_q)
-
-    return render_template('wall.html', join=joinboys)
+    comment_q = "SELECT * FROM comments JOIN users ON users.user_id = comments.user_user_id JOIN messages ON messages.message_id = comments.message_id ORDER BY comments.created_at DESC"
+    commentque = mysql.query_db(comment_q)
+    return render_template('wall.html', join=joinboys, comm=commentque)
 
 
 @app.route('/postmessage', methods=["POST"])
@@ -101,6 +102,15 @@ def message():
     create_msg_q = "INSERT INTO messages (user_user_id, message, created_at) VALUES (:ui, :msg, NOW())"
     msg_data = {'ui': session['user_id'], 'msg': messagepost}
     mysql.query_db(create_msg_q, msg_data)
+    return redirect('/wall')
+
+
+@app.route('/postcomment', methods=["POST"])
+def comment():
+    commentpost = request.form['comment']
+    create_cmt_q = "INSERT INTO comments (user_user_id, comment, created_at, message_id) VALUES (:cui, :cmt, NOW(), :mi)"
+    cmt_data = {'cui': session['user_id'], 'mi': request.form['message_id'], 'cmt': commentpost}
+    mysql.query_db(create_cmt_q, cmt_data)
     return redirect('/wall')
 
 
