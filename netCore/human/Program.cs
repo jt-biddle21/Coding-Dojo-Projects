@@ -64,7 +64,7 @@ namespace human
                 string p3name = Console.ReadLine();
                 if (p3name == "Brad")
                 {
-                    Console.WriteLine("Brad... You're not invited man...");
+                    Console.WriteLine("Brad... You're not invited man... Unless you want to pay us 100,000 dollars");
                     Console.WriteLine("Please enter another name");
                     p3name = Console.ReadLine();
                 }
@@ -84,17 +84,8 @@ namespace human
                     int p3death = 0;
                     int p2death = 0;
                     int p1death = 0;
-                    if (input == "quit")
-                    {
-                        Console.WriteLine("You need to type 'Q'uit");
-                        input = Console.ReadLine();
-                    }
-                    if (input == "Quit")
-                    {
-                        break;
-                    }
                     int deaths = 0;
-                    while (counter != 21)
+                    if (counter != 21)
                     {
                         if (x == 1)
                         {
@@ -117,50 +108,50 @@ namespace human
                                 Console.WriteLine($"Enemy Health:{Pl2}: {player2health} ||| {Pl3}: {player3health} ");
                                 Console.WriteLine("Which enemy would you like to attack?");
                                 Console.WriteLine($"Type 'p2' to attack {Player2.name} or 'p3' to attack {Player3.name}");
-                                string p1attack = Console.ReadLine();
-                                if (p1attack == "p2") //Attacks player 2
+                                input = Console.ReadLine();
+                                if (input == "p2") //Attacks player 2
                                 // check if they type in somehting other that p2 and p3
                                 {
                                     Console.WriteLine($"Which Attack would you like to preform on {Pl2}?");
                                     Console.WriteLine("p2a1: <>Basic Attack<> #5 Damage * Strength#");
                                     Console.WriteLine("p2a2: <>Absorb Health<> #10 Damage, +10 health#");
                                     Console.WriteLine("p2a3: <>Abandon<> #-15 health#");
-                                    p1attack = Console.ReadLine();
+                                    input = Console.ReadLine();
                                 }
-                                if (p1attack == "p2a1")
+                                if (input == "p2a1")
                                 {
                                     Player1.Attack(Player2);
                                     Console.WriteLine($"{Player1.name} tickled {Player2.name}, and his health is now {Player2.health}");
                                 }
-                                if (p1attack == "p2a2")
+                                if (input == "p2a2")
                                 {
                                     Player1.Steal(Player2);
                                     Console.WriteLine($"{Player1.name} stole from {Player2.name}, and his health is now {Player2.health}");
                                 }
-                                if (p1attack == "p2a3")
+                                if (input == "p2a3")
                                 {
                                     Player1.getAway();
                                     Console.WriteLine($"{Player1.name} chosen not to attack.");
                                 }
-                                if (p1attack == "p3") //Attacks player 3
+                                if (input == "p3") //Attacks player 3
                                 {
                                     Console.WriteLine($"Which Attack would you like to preform on {Pl3}?");
                                     Console.WriteLine("p3a1: <>Basic Attack<> #5 Damage * Strength#");
                                     Console.WriteLine("p3a2: <>Absorb Health<> #10 Damage, +10 health#");
                                     Console.WriteLine("p3a3: <>Abandon<> #-15 health#");
-                                    p1attack = Console.ReadLine();
+                                    input= Console.ReadLine();
                                 }
-                                if (p1attack == "p3a1")
+                                if (input == "p3a1")
                                 {
                                     Player1.Attack(Player3);
                                     Console.WriteLine($"{Player1.name} tickled {Player3.name}, and his health is now {Player3.health}");
                                 }
-                                if (p1attack == "p3a2")
+                                if (input == "p3a2")
                                 {
                                     Player1.Steal(Player3);
                                     Console.WriteLine($"{Player1.name} stole from {Player3.name}, and his health is now {Player3.health}");
                                 }
-                                if (p1attack == "p3a3")
+                                if (input == "p3a3")
                                 {
                                     Player1.getAway();
                                     Console.WriteLine($"{Player1.name} chosen not to attack.");
@@ -193,49 +184,51 @@ namespace human
                                 Console.WriteLine($"Enemy Health:{Pl1}: {player1health} ||| {Pl3}: {player3health} ");
                                 Console.WriteLine("Which enemy would you like to attack?");
                                 Console.WriteLine($"Type 'p1' to attack {Player1.name} or 'p3' to attack {Player3.name}");
-                                string p2attack = Console.ReadLine();
-                                if (p2attack == "p1") //Attacks player 1
+                                input = Console.ReadLine();
+                                if (input == "p1") //Attacks player 1
                                 {
                                     Console.WriteLine($"Which Attack would you like to preform on {Pl1}?");
                                     Console.WriteLine("p1a1: <>Basic Attack<> #5 Damage * Strength#");
                                     Console.WriteLine("p1a2: <>Demolish<> #Insta-kill if player health < 50, otherwise 2 damage * strength#");
                                     Console.WriteLine("p1a3: <>Health Regeneration<> #Regenerate Health#");
-                                    p2attack = Console.ReadLine();
+                                    input = Console.ReadLine();
+                                    
                                 }
-                                if (p2attack == "p1a1")
+                                if (input == "p1a1")
                                 {
                                     Player2.Attack(Player1);
                                     Console.WriteLine($"{Player2.name} sliced {Player1.name}, and his health is now {Player1.health}");
                                 }
-                                if (p2attack == "p1a2")
+                                if (input == "p1a2")
                                 {
                                     Player2.deathBlow(Player1);
                                     Console.WriteLine($"{Player2.name} squashed {Player1.name}, and his health is now {Player1.health}");
                                 }
-                                if (p2attack == "p1a3")
+                                if (input == "p1a3")
                                 {
                                     Player2.Meditate();
                                     Console.WriteLine($"{Player2.name} chosen not to attack, and has regenerated some of his health!");
                                 }
-                                if (p2attack == "p3") //Attacks player 3
+                                if (input == "p3") //Attacks player 3
                                 {
                                     Console.WriteLine($"Which Attack would you like to preform on {Pl1}?");
                                     Console.WriteLine("p3a1: <>Basic Attack<> #5 Damage * Strength#");
                                     Console.WriteLine("p3a2: <>Demolish<> #Insta-kill if player health < 50, otherwise 2 damage * strength#");
                                     Console.WriteLine("p3a3: <>Health Regeneration<> #Regenerate Health#");
-                                    p2attack = Console.ReadLine();
+                                    input = Console.ReadLine();
+                                    
                                 }
-                                if (p2attack == "p3a1")
+                                if (input == "p3a1")
                                 {
                                     Player2.Attack(Player3);
                                     Console.WriteLine($"{Player2.name} sliced {Player3.name}, and his health is now {Player3.health}");
                                 }
-                                if (p2attack == "p3a2")
+                                if (input == "p3a2")
                                 {
                                     Player2.deathBlow(Player3);
                                     Console.WriteLine($"{Player2.name} squashed {Player3.name}, and his health is now {Player3.health}");
                                 }
-                                if (p2attack == "p3a3")
+                                if (input == "p3a3")
                                 {
                                     Player2.Meditate();
                                     Console.WriteLine($"{Player2.name} chosen not to attack, and has regenerated some of his health!");
@@ -249,7 +242,8 @@ namespace human
                         }
                         if (x == 3)
                         {
-                             if (Player3.health <= 0)
+                            Console.WriteLine("You can quit after Player 3's turn by typing 'Quit'");
+                            if (Player3.health <= 0)
                             {
                                 p3death = 1;
                                 Console.WriteLine($"{Player3.name} is dead!");
@@ -268,63 +262,63 @@ namespace human
                                 Console.WriteLine($"Enemy Health:{Pl1}: {player1health} ||| {Pl2}: {player2health} ");
                                 Console.WriteLine("Which enemy would you like to attack?");
                                 Console.WriteLine($"Type 'p1' to attack {Player1.name} or 'p2' to attack {Player2.name}");
-                                string p3attack = Console.ReadLine();
-                                if (p3attack == "p1")
+                                input = Console.ReadLine();
+                                
+                                if (input == "p1")
                                 {
                                     Console.WriteLine($"Which Attack would you like to preform on {Pl1}?");
                                     Console.WriteLine("p1a1: <>Basic Attack<> #5 Damage * Strength#");
                                     Console.WriteLine("p1a2: <>Hat Rabbit<> #Random damage from 20 - 50hp#");
                                     Console.WriteLine("p1a3: <>Pray<> #Heals 10 * intelligence#");
-                                    p3attack = Console.ReadLine();
+                                    input = Console.ReadLine();
+                                    
                                 }
-                                if (p3attack == "p1a1")
+                                if (input == "p1a1")
                                 {
                                     Player3.Attack(Player1);
                                     Console.WriteLine($"{Player3.name} smacked {Player1.name}, and his health is now {Player1.health}");
                                 }
-                                if (p3attack == "p1a2")
+                                if (input == "p1a2")
                                 {
                                     Player3.Fireball(Player1);
                                     Console.WriteLine($"{Player3.name} set his rabbit on {Player1.name}, and his health is now {Player1.health}");
                                 }
-                                if (p3attack == "p1a3")
+                                if (input == "p1a3")
                                 {
                                     Player3.Heal();
                                     Console.WriteLine($"{Player3.name} chosen not to attack, and has regenerated some of his health!");
                                 }
-                                if (p3attack == "p2")
+                                if (input == "p2")
                                 {
                                     Console.WriteLine($"Which Attack would you like to preform on {Pl2}?");
                                     Console.WriteLine("p2a1: <>Basic Attack<> #5 Damage * Strength#");
                                     Console.WriteLine("p2a2: <>Hat Rabbit<> #Random damage from 20 - 50hp#");
                                     Console.WriteLine("p2a3: <>Pray<> #Heals 10 * intelligence#");
-                                    p3attack = Console.ReadLine();
+                                    input = Console.ReadLine();
                                 }
-                                if (p3attack == "p2a1")
+                                if (input == "p2a1")
                                 {
                                     Player3.Attack(Player2);
                                     Console.WriteLine($"{Player3.name} smacked {Player2.name}, and his health is now {Player2.health}");
                                 }
-                                if (p3attack == "p2a2")
+                                if (input == "p2a2")
                                 {
                                     Player3.Fireball(Player2);
                                     Console.WriteLine($"{Player3.name} set his rabbit {Player2.name}, and his health is now {Player2.health}");
                                 }
-                                if (p3attack == "p2a3")
+                                if (input == "p2a3")
                                 {
                                     Player3.Heal();
                                     Console.WriteLine($"{Player3.name} chosen not to attack, and has regenerated some of his health!");
                                 }
                             }
                             counter++;
+                            Console.WriteLine("Would you like to quit?");
+                            input = Console.ReadLine();
                             if (deaths < 2)
                             {
                                 x = 1; //Resets backs to player 1's turn         
                             } 
-                        }
-                        if (counter >= 5)
-                        {
-                            Console.WriteLine("Type 'Quit' whenever, to exit the fight!");
                         }
                     }
                     deaths = p1death + p2death + p3death;
