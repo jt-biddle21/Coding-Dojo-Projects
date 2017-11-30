@@ -98,7 +98,7 @@ namespace person
         }
         public void Meditate()
         {
-            health = 200;
+            health += 75;
         }
     }
 }
