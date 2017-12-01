@@ -1,0 +1,9 @@
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/firstWebApp/bin/Debug/netcoreapp1.1/firstWebApp.deps.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/firstWebApp/bin/Debug/netcoreapp1.1/firstWebApp.runtimeconfig.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/firstWebApp/bin/Debug/netcoreapp1.1/firstWebApp.runtimeconfig.dev.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/firstWebApp/bin/Debug/netcoreapp1.1/firstWebApp.dll
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/firstWebApp/bin/Debug/netcoreapp1.1/firstWebApp.pdb
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/firstWebApp/obj/Debug/netcoreapp1.1/firstWebApp.csproj.CoreCompileInputs.cache
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/firstWebApp/obj/Debug/netcoreapp1.1/firstWebApp.AssemblyInfo.cs
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/firstWebApp/obj/Debug/netcoreapp1.1/firstWebApp.dll
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/firstWebApp/obj/Debug/netcoreapp1.1/firstWebApp.pdb

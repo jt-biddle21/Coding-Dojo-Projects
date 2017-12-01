@@ -1,0 +1,9 @@
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/simpleCRUDmySql/bin/Debug/netcoreapp1.1/simpleCRUDmySql.deps.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/simpleCRUDmySql/bin/Debug/netcoreapp1.1/simpleCRUDmySql.runtimeconfig.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/simpleCRUDmySql/bin/Debug/netcoreapp1.1/simpleCRUDmySql.runtimeconfig.dev.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/simpleCRUDmySql/obj/Debug/netcoreapp1.1/simpleCRUDmySql.csproj.CoreCompileInputs.cache
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/simpleCRUDmySql/obj/Debug/netcoreapp1.1/simpleCRUDmySql.AssemblyInfo.cs
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/simpleCRUDmySql/bin/Debug/netcoreapp1.1/simpleCRUDmySql.dll
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/simpleCRUDmySql/bin/Debug/netcoreapp1.1/simpleCRUDmySql.pdb
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/simpleCRUDmySql/obj/Debug/netcoreapp1.1/simpleCRUDmySql.dll
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/simpleCRUDmySql/obj/Debug/netcoreapp1.1/simpleCRUDmySql.pdb
