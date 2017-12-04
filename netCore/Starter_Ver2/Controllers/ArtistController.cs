@@ -34,5 +34,18 @@ namespace MusicApi.Controllers {
             instructions += "       *ListArtists=?(true/false)\n";
             return instructions;
         }
+        [Route("/artists")]
+        [HttpGet]
+        public JsonResult Artists() 
+        {
+            return Json(allArtists);
+        }
+        [Route("/artists/name/{name}")]
+        [HttpGet]
+        public JsonResult Artists(string name) 
+        {
+            var x = allArtists.Where(c => c.ArtistName.Contains(name));
+            return Json(x);
+        }
     }
 }
