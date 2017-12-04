@@ -1,0 +1,35 @@
+*{
+    margin: 2px;
+    padding-top: 5px;
+}
+#header{
+    text-align: center;
+}
+#portrait{
+    margin-left: 325px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#timeproj{
+    width: 100px;
+}
+#aboutmetitle{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 50px;
+}
+#aboutme{
+    resize: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+.linktags{
+    vertical-align: top;
+}
+#time p{
+    display: inline-block;
+}
+#time h3{
+    display: inline-block;
+}

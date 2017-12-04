@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Random Passcode Homepage</title>
+        <meta charset='utf-8'>
+    </head>
+    <body>
+        <h2>Click to Generate a Random Passcode!</h2>
+        <p>Passcode Generator(Number of Generations: @ViewBag.counter)</p>
+        <p>New Generated Passcode is:</p>
+        <p>@ViewBag.passcode</p>
+        <form action="/" method="GET">
+            <input type="submit" name="submit" value="Generate!">
+        </form>
+    </body>
+</html>

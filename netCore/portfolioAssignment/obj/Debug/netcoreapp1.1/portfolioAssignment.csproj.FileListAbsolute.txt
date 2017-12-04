@@ -1,0 +1,9 @@
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/portfolioAssignment/bin/Debug/netcoreapp1.1/portfolioAssignment.deps.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/portfolioAssignment/bin/Debug/netcoreapp1.1/portfolioAssignment.runtimeconfig.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/portfolioAssignment/bin/Debug/netcoreapp1.1/portfolioAssignment.runtimeconfig.dev.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/portfolioAssignment/bin/Debug/netcoreapp1.1/portfolioAssignment.dll
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/portfolioAssignment/bin/Debug/netcoreapp1.1/portfolioAssignment.pdb
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/portfolioAssignment/obj/Debug/netcoreapp1.1/portfolioAssignment.csproj.CoreCompileInputs.cache
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/portfolioAssignment/obj/Debug/netcoreapp1.1/portfolioAssignment.AssemblyInfo.cs
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/portfolioAssignment/obj/Debug/netcoreapp1.1/portfolioAssignment.dll
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/portfolioAssignment/obj/Debug/netcoreapp1.1/portfolioAssignment.pdb

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Contacts</title>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" href="~/css/styles.css"/>
+    </head>
+    <body>
+        <a class="linktags" href="/">Home</a>
+        <a class="linktags" href="/projects">Projects</a>
+        <h1>Contacts:</h1>
+        <form action="/sending" method="POST">
+            <label id="name">Name: <input type="text" name="firstName"></label></br>
+            <label id="email">Email: <input type="email" name="email"></label></br>
+            <p>Message:</p>
+            <textarea id="message" rows="10" cols"20"></textarea></br>
+            <input type="submit" name="submit" value="Send">
+        </form>
+    </body>
+</html>

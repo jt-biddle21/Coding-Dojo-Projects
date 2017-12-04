@@ -1,0 +1,9 @@
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/randomPasscode/bin/Debug/netcoreapp1.1/randomPasscode.deps.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/randomPasscode/bin/Debug/netcoreapp1.1/randomPasscode.runtimeconfig.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/randomPasscode/bin/Debug/netcoreapp1.1/randomPasscode.runtimeconfig.dev.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/randomPasscode/bin/Debug/netcoreapp1.1/randomPasscode.dll
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/randomPasscode/bin/Debug/netcoreapp1.1/randomPasscode.pdb
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/randomPasscode/obj/Debug/netcoreapp1.1/randomPasscode.csproj.CoreCompileInputs.cache
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/randomPasscode/obj/Debug/netcoreapp1.1/randomPasscode.AssemblyInfo.cs
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/randomPasscode/obj/Debug/netcoreapp1.1/randomPasscode.dll
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/randomPasscode/obj/Debug/netcoreapp1.1/randomPasscode.pdb
