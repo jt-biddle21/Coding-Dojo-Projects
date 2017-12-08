@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Quotes</title>
+        <meta charset='utf-8'>
+    </head>
+    <body>
+        <h1><ins>|Here are the awesome quotes!|</ins></h1>
+        @{
+            foreach (var x in ViewBag.objects)
+            {
+                <p>@x["content"]</p>
+                <code>Posted by: @x["name"] @x["created_at"]</code>
+                <hr>
+            }
+        }
+        <a href="/">Back To Homepage!</a>
+    </body>
+</html>

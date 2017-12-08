@@ -1,0 +1,10 @@
+@{
+    <p>@TempData["CustomError"]</p>
+}
+<h1><code>Welcome to the Wall!</code></h1>
+<h3>Log in:</h3>
+<form action="/loggingIn" method="POST">
+    Email: <input name="useremail" type="email"/><br>
+    Password: <input name="userpassword" type="password"/><br>
+    <button type="submit">Log In</button>
+</form>

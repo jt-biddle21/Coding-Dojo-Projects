@@ -1,0 +1,26 @@
+@{
+    foreach(var error in ViewBag.errors)
+    {
+        //If there are any errors for a field...
+        if(@error.Errors.Count > 0)
+        {
+            // We show the first error for that field
+            <p>@error.Errors[0].ErrorMessage</p>
+        }
+    }
+}
+<h1><code>Welcome to the Wall!</code></h1>
+<h3>Log in:</h3>
+<form action="/loggingIn" method="POST">
+    Email: <input name="Email" type="email"/><br>
+    Password: <input name="Password" type="password"/><br>
+    <button type="submit">Log In</button>
+</form><hr>
+<h3>Need an account? Register here:</h3>
+<form action="/register" method="POST">
+    First Name: <input name="First_Name" type="text"/><br>
+    Last Name: <input name="Last_Name" type="text"/><br>
+    Email: <input name="Email" type="email"/><br>
+    Password: <input name="Password" type="password"/><br>
+    <button type="submit">Register</button>
+</form>
