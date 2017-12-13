@@ -1,0 +1,9 @@
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/rESTauranter/bin/Debug/netcoreapp1.1/rESTauranter.deps.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/rESTauranter/bin/Debug/netcoreapp1.1/rESTauranter.runtimeconfig.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/rESTauranter/bin/Debug/netcoreapp1.1/rESTauranter.runtimeconfig.dev.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/rESTauranter/obj/Debug/netcoreapp1.1/rESTauranter.csproj.CoreCompileInputs.cache
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/rESTauranter/obj/Debug/netcoreapp1.1/rESTauranter.AssemblyInfo.cs
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/rESTauranter/bin/Debug/netcoreapp1.1/rESTauranter.dll
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/rESTauranter/bin/Debug/netcoreapp1.1/rESTauranter.pdb
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/rESTauranter/obj/Debug/netcoreapp1.1/rESTauranter.dll
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/rESTauranter/obj/Debug/netcoreapp1.1/rESTauranter.pdb

@@ -9,7 +9,7 @@
         @{
             foreach (var x in ViewBag.username)
             {
-                <h1><code>Welcome To Your Account @x["first_name"]</code></h1>
+                <marquee direction="up" behavior="alternate" height="90"><h1><code>Welcome To Your Account @x["first_name"]</code></h1></marquee>
             }
         }
         <p>Post a message to your board!</p>
@@ -27,14 +27,14 @@
                     if (@x["messages_id"] == @y["message_id"])
                     {
                         <p>@y["comment"]</p>
-                        <code>Posted by: @y["first_name"] @y["commentposted_at"]</code>
+                        <small><code>Posted by: @y["first_name"] @y["commentposted_at"]</code></small>
                     }
                 } 
                 <p>Leave a comment!</p>
                 <form action="/comment" method="POST">
                     <input type="hidden" name ="hiddenMessageId" value=@x["messages_id"]>
                     <textarea name="content" rows="5" cols="25" style="resize: none;"></textarea><br>
-                    <input type="submit" value="Post">
+                    <input type="submit" value="Submit">
                 </form>  
                 <hr>
             }

@@ -1,0 +1,9 @@
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/dojoLeague/bin/Debug/netcoreapp1.1/dojoLeague.deps.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/dojoLeague/bin/Debug/netcoreapp1.1/dojoLeague.runtimeconfig.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/dojoLeague/bin/Debug/netcoreapp1.1/dojoLeague.runtimeconfig.dev.json
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/dojoLeague/bin/Debug/netcoreapp1.1/dojoLeague.dll
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/dojoLeague/bin/Debug/netcoreapp1.1/dojoLeague.pdb
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/dojoLeague/obj/Debug/netcoreapp1.1/dojoLeague.csproj.CoreCompileInputs.cache
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/dojoLeague/obj/Debug/netcoreapp1.1/dojoLeague.AssemblyInfo.cs
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/dojoLeague/obj/Debug/netcoreapp1.1/dojoLeague.dll
+/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/dojoLeague/obj/Debug/netcoreapp1.1/dojoLeague.pdb

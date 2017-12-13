@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+@foreach (var x in ViewBag.trail)
+{
+<h2>@x.Name</h2>
+<p>Description:</p>
+<p>@x.Description</p>
+<p>Length: @x.Length miles</p>
+<p>Latitude: @x.Latitude °</p>
+<p>Longitude: @x.Longitude °</p>
+}

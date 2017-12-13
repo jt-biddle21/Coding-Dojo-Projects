@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+@model rESTauranter.Models.Trail
+<h2>Add a New Trail</h2>
+<form action="addTrail" method="POST">
+    <label asp-for="Name"></label>
+    <input asp-for="Name">
+    <span asp-validation-for="Name"></span><br>
+
+    <label asp-for="Description"></label>
+    <textarea asp-for="Description" style="resize: none;"></textarea>
+    <span asp-validation-for="Description"></span><br>
+
+    <label asp-for="Length"></label>
+    <input asp-for="Length">
+    <span asp-validation-for="Length"></span><br>
+
+    <label asp-for="Elevation"></label>
+    <input asp-for="Elevation">
+    <span asp-validation-for="Elevation"></span><br>
+
+    <label asp-for="Latitude"></label>
+    <input asp-for="Latitude">
+    <span asp-validation-for="Latitude"></span><br>
+
+    <label asp-for="Longitude"></label>
+    <input asp-for="Longitude">
+    <span asp-validation-for="Longitude"></span><br>
+
+    <input type="submit" value="Add Trail">
+</form>

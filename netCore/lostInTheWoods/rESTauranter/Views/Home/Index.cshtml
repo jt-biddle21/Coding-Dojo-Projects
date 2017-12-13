@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<table class="table table-striped">
+    <tr>
+        <th>Trail Name</th>
+        <th>Length</th>
+        <th>Elevation</th>
+    </tr>
+    @foreach (var x in ViewBag.trails)
+    {
+        <tr>
+            <td><a href="show/@x.TrailId">@x.Name</a></td>
+            <td>@x.Length miles</td>
+            <td>@x.Elevation feet</td>
+        </tr>
+    }
+</table>
+<a href="add" class="btn btn-primary">Add a New Trail</a>
