@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Dojo Registration";
+}
+@model dojoLeague.Models.Dojo
+<h2>Register a Dojo:</h2>
+<form action="addDojo" method="POST">
+    <label asp-for="DojoName"></label>
+    <input asp-for="DojoName">
+    <span asp-validation-for="DojoName"></span><br>
+
+    <label asp-for="Location"></label>
+    <input asp-for="Location"></textarea>
+    <span asp-validation-for="Location"></span><br>
+
+    <label asp-for="Description"></label>
+    <input asp-for="Description">
+    <span asp-validation-for="Description"></span><br>
+
+    <input type="submit" value="Register">
+</form>
+<h3>Registered Dojos</h3>
+<table class="table table-striped">
+    <tr>
+        <th>Dojo Name</th>
+        <th>Description</th>
+    </tr>
+    @foreach (var x in ViewBag.Dojos)
+    {
+        <tr>
+            @if(@x.DojoName == "Rogue"){<td>Rogue</td>}else{<td><a href="showDojo/@x.DojoId">@x.DojoName</a></td>}
+            <td>@x.Description</td>
+        </tr>
+    }
+</table>

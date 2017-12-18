@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using dojoLeague.Factory;
 
 namespace dojoLeague
 {
@@ -17,7 +18,6 @@ namespace dojoLeague
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
@@ -28,6 +28,10 @@ namespace dojoLeague
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
+            services.Configure<MySqlOptions>(Configuration.GetSection("DBInfo"));
+            services.AddScoped<NinjaFactory>();
+            services.AddScoped<DojoFactory>();
+            services.AddSession();
             services.AddMvc();
         }
 
@@ -47,13 +51,8 @@ namespace dojoLeague
             }
 
             app.UseStaticFiles();
-
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+            app.UseSession();
+            app.UseMvc();
         }
     }
 }

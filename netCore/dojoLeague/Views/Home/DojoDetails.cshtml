@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Dojo Info";
+}
+@foreach(var x in ViewBag.DojoName)
+{
+    <h2>~@x.DojoName</h2>
+    <h4>Description: @x.Description</h4>
+}
+<h3>Current Members</h3>
+<table class="table table-striped">
+    <tr>
+        <th>Ninja</th>
+        <th>Action</th>
+    </tr>
+    @foreach (var z in ViewBag.TheDojo)
+    {
+        <tr>
+            @if(@z.Dojo_Id == @ViewBag.Id)
+            {
+                <td>@z.NinjaName</td>
+                <td><a href="/remove/@z.NinjaId">Banish!</a></td>
+            }
+        </tr>
+    }
+</table>
+<h3>Rogue Ninjas</h3>
+<table class="table table-striped">
+    <tr>
+        <th>Ninja</th>
+        <th>Action</th>
+    </tr>
+    @foreach (var z in ViewBag.TheDojo)
+    {
+        <tr>
+            @if(@z.Dojo_Id == 1)
+            {
+                <td>@z.NinjaName</td>
+                <td><a href="/recruit/@z.NinjaId">Recruit!</a></td>
+            }
+        </tr>
+    }
+</table>

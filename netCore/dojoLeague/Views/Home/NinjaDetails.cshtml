@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Ninja Info";
+}
+<h4>Welcome Ninja</h4>
+@foreach (var x in ViewBag.LilNinja)
+{
+    <h3>Name: @x.NinjaName</h3>
+    <p>Level: @x.Level</p>
+    <p>Description: @x.NinjaDescription</p>
+
+    <p>Associated Dojo: @if(@x.DojoName == "Rogue"){<span>Rogue</span>}else{<a href="/showDojo/@x.Dojo_Id">@x.DojoName</a>}</p>
+}

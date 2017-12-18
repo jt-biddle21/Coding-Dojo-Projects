@@ -10217,11 +10217,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/rESTauranter/rESTauranter.csproj",
+      "projectUniqueName": "/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/lostInTheWoods/rESTauranter/rESTauranter.csproj",
       "projectName": "rESTauranter",
-      "projectPath": "/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/rESTauranter/rESTauranter.csproj",
+      "projectPath": "/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/lostInTheWoods/rESTauranter/rESTauranter.csproj",
       "packagesPath": "/Users/justinbiddle/.nuget/packages/",
-      "outputPath": "/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/rESTauranter/obj/",
+      "outputPath": "/Users/justinbiddle/Desktop/DojoWork/DojoAssignments/netCore/lostInTheWoods/rESTauranter/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/justinbiddle/.nuget/NuGet/NuGet.Config"
